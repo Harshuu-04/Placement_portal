@@ -23,14 +23,31 @@ export default async function Home() {
           <div className="mx-auto flex justify-center mb-6">
             <img src="/logo.jpg" alt="MSIT Logo" className="h-24 w-auto drop-shadow-md" />
           </div>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl text-slate-900 leading-tight">
-            MSIT Training & Placement
-            <span className="block text-amber-500 mt-2">Management System</span>
+               
+          <h1
+            className="group relative inline-block cursor-pointer
+              font-serif font-bold
+              text-3xl sm:text-4xl md:text-5xl lg:text-6xl
+              tracking-tight leading-tight
+              text-black
+              transition-all duration-300 ease-in-out
+              hover:scale-[1.02]"
+          >
+            MSIT TRAINING & PLACEMENT CELL
+
+            <span
+              className="absolute -bottom-3 left-0
+                h-[2px] w-0 bg-black
+                transition-all duration-500 ease-out"
+                
+            />
           </h1>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            The official portal for MSIT students to manage their profiles, 
-            explore placement drives, and track their recruitment journey.
+          
+          <p className="text-black/70 text-lg sm:text-xl md:text-1xl lg:text-2xl font-short">
+            Empowering students with the skills and opportunities they need to succeed in their careers.
           </p>
+
+          
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
             <Link
               href="/signup"
